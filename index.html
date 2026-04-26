@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For You 💖</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ⏳ COUNTDOWN -->
+<section class="page active">
+  <div class="card">
+    <h1 class="title">⏳ Countdown to Your Surprise</h1>
+    <div id="timer"></div>
+
+    <div id="unlockContainer" class="hidden">
+      <input type="password" id="password" placeholder="Enter Secret 💖"/>
+      <button id="unlockBtn">Unlock 🔓</button>
+    </div>
+  </div>
+</section>
+
+<!-- 🎉 INTRO -->
+<section class="page">
+  <div class="card">
+    <h1 class="title">🎉 Hey Beautiful I have something for your birthday!!! ❤️</h1>
+    <button class="nextBtn">Start</button>
+  </div>
+</section>
+
+<!-- 🎆 CELEBRATION -->
+<section class="page">
+  <canvas id="fireworks"></canvas>
+
+  <div class="card">
+    <h1 class="neonText title">✨ Happy 23 Divya ✨</h1>
+
+    <div class="imageWrapper">
+      <img src="assets/1777218985126.jpg"/>
+    </div>
+
+    <button id="blastBtn">Celebrate 🎂</button>
+    <button class="nextBtn">Next</button>
+  </div>
+</section>
+
+<!-- 💌 BIRTHDAY CARD -->
+<section class="page">
+  <div class="card birthdayCard">
+    
+    <h1 class="birthdayTitle">🎂 Happy Birthday Divya 💖</h1>
+
+    <p>
+      On this beautiful day, I just want you to know how truly special you are to me.  
+      You bring so much happiness, warmth, and love into my life.  
+      I feel incredibly lucky and grateful to have you. 💖  
+      <br><br>
+      I wish you endless smiles, success, and all the love in the world.  
+      May your life be filled with beautiful moments, just like the ones you give me every day. ✨
+    </p>
+
+    <button id="confettiBtn">Celebrate 🎆</button>
+    <button class="nextBtn">Next</button>
+  </div>
+</section>
+
+<!-- 💖 MESSAGE CARDS -->
+<section class="page"><div class="card"><h2>💖 I am thinking about you and I am really grateful for you</h2><button class="nextBtn">Next</button></div></section>
+<section class="page"><div class="card"><h2>❤️ I choose you everyday</h2><button class="nextBtn">Next</button></div></section>
+<section class="page"><div class="card"><h2>💫 I cherish our time together</h2><button class="nextBtn">Next</button></div></section>
+<section class="page"><div class="card"><h2>🥰 You're my favorite person</h2><button class="nextBtn">Next</button></div></section>
+<section class="page"><div class="card"><h2>💖 You matter so much to me</h2><button class="nextBtn">Next</button></div></section>
+<section class="page"><div class="card"><h2>🤝 Even when things get hard, I am always here to work on it with you</h2><button class="nextBtn">Next</button></div></section>
+<section class="page"><div class="card"><h2>🎂 Once again happy birthday my love Divya 💖</h2><button class="nextBtn">Next</button></div></section>
+
+<!-- 🎥 VIDEO -->
+<section class="page">
+  <div class="card">
+    <h2>🎥 A Special Message For You</h2>
+    <video controls class="video">
+      <source src="assets/video.mp4" type="video/mp4"/>
+    </video>
+    <button class="nextBtn">Final</button>
+  </div>
+</section>
+
+<!-- ❤️ FINAL -->
+<section class="page">
+  <div class="card">
+    <h1 class="title">💖 I Love You Forever 💖</h1>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
