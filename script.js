@@ -31,8 +31,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   setInterval(() => {
     const now = new Date().getTime();
-    const diff = targetDate - now;
-    // const diff = 0;
+    // const diff = targetDate - now;
+    const diff = 0;
 
     if (diff <= 0) {
       timer.innerHTML = "🎉 Time to unlock!";
